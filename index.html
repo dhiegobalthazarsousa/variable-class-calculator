@@ -27,6 +27,33 @@
                 </ul>
             </nav>
         </header>
+        <section id="main-content">
+            <section class="calculator-container">
+                <h2>Calculadora de Investimentos</h2>
+                <form action="#">
+                    <div class="row">
+                        <label for="valor-inicial">Valor Inicial
+                            <input type="number" name="valor-inicial" id="valor-inicial" />
+                        </label>
+                        <label for="aporte">Aporte Mensal<input type="number" name="aporte" id="aporte" />
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label for="taxa">taxa de juros mensal %
+                            <input type="number" name="taxa-mensal" id="taxa-mensal" />
+                        </label>
+                        <label for="tempo">Quantidade de Meses
+                            <input type="number" name="tempo" id="tempo" />
+                        </label>
+                    </div>
+                    <div class="row">
+                        <button id="calcular" type="submit">Calcular</button>
+                    </div>
+                </form>
+            </section>
+            <section class="result-container">
+            </section>
+        </section>
     </main>
 </body>
 
