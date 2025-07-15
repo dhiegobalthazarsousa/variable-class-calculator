@@ -11,13 +11,12 @@
 }
 
 body{
-    background-color: #d6d6d6;
     width: 100vw;
 }
 
 header{
     align-items: center;
-    background-color: white;
+    border-bottom: 1px solid var(--text-color);
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -38,8 +37,78 @@ header ul>li>a{
     text-decoration: none;
 }
 
+input{
+     
+}
+
+form{
+    align-self: center;
+}
+
 main{
     width: 100%;
+}
+
+#main-content{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    gap: 10px;
+}
+
+.calculator-container{
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 50%;
+}
+
+
+.calculator-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-container form button{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0px 1px 1px 1px var(--text-color);
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 8px;
+    transition: transform 0.1s ease-in-out;
+}
+
+.calculator-container form button:active{
+    transform: scale(0.95);
+    box-shadow: 0px 0px 1px 2px var(--text-color);
+}
+
+.calculator-container h2{
+    text-align: center;
+}
+
+.calculator-container input{
+    padding: 6px;
+    outline: none;
+}
+
+.result-container{
+    padding: 10px;
+    width: 50%;
+}
+
+.row{
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.row input{
+    display: block;
 }
 
 .search-input{
@@ -50,7 +119,7 @@ main{
     padding: 10px;
 }
 
-.search-input>input{
+.search-input input{
     border: none;
     outline: none;
     padding: 2px;
