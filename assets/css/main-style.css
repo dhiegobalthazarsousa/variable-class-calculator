@@ -58,15 +58,22 @@ main{
 }
 
 .calculator-container{
-    background-color: #e0e0e0;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     padding: 10px;
     width: 50%;
 }
 
-
 .calculator-container form{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.calculator-container form>section{
     display: flex;
     flex-direction: column;
 }
@@ -74,17 +81,16 @@ main{
 .calculator-container form button{
     background-color: var(--primary-color);
     border: none;
-    border-radius: 6px;
-    box-shadow: 0px 1px 1px 1px var(--text-color);
+    border-radius: 10px;
     cursor: pointer;
     font-size: 1.2em;
-    padding: 8px;
-    transition: transform 0.1s ease-in-out;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
 .calculator-container form button:active{
     transform: scale(0.95);
-    box-shadow: 0px 0px 1px 2px var(--text-color);
+    box-shadow: inset 0px 0px 1px 2px var(--text-color);
 }
 
 .calculator-container h2{
@@ -125,8 +131,14 @@ main{
     padding: 2px;
 }
 
+.total-juros{
+    border: 1px solid black;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
 @media (max-width: 600px) {
-    header{
+    header{background-color: #e0e0e0;
         flex-direction: column;
     }
 
